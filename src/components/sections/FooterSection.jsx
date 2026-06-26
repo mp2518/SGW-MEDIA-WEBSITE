@@ -28,13 +28,6 @@ export default function FooterSection() {
             ))}
           </div>
 
-          {/* Contact */}
-          <div className="flex flex-col gap-3">
-            <p className="font-heading font-bold text-xs tracking-[0.3em] uppercase text-alabaster/40 mb-2">Contact</p>
-            <a href="mailto:info@sgwmediaproduction.com" className="font-body text-sm text-alabaster/70 hover:text-alabaster transition-colors duration-300">
-              info@sgwmediaproduction.com
-            </a>
-          </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-alabaster/10 flex flex-col md:flex-row items-center justify-between gap-4">
