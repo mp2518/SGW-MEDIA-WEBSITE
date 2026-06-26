@@ -27,7 +27,7 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between px-6 md:px-12 py-6">
           <button onClick={() => scrollTo('#hero')} className="text-white font-heading font-black text-xl tracking-tight">
-            SGW MEDIA
+            SGW MEDIA PRODUCTION LLC.
           </button>
 
           <div className="hidden md:flex items-center gap-10">
