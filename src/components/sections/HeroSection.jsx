@@ -68,12 +68,12 @@ export default function HeroSection({ heroImage }) {
             Web · Software · Social Media
           </motion.p>
 
-          <div className="overflow-hidden">
+          <div className="overflow-visible">
             <motion.h1
               initial={{ y: '120%' }}
               animate={{ y: 0 }}
               transition={{ delay: 0.3, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="text-alabaster font-display font-black text-[clamp(3rem,10vw,8rem)] leading-[0.9] tracking-[-0.03em]"
+              className="text-alabaster font-display font-black text-[clamp(3rem,10vw,8rem)] leading-[1] tracking-[-0.03em]"
               style={{
                 transform: `translate(${mouse.x * 0.3}px, ${mouse.y * 0.3}px)`,
               }}
@@ -81,12 +81,12 @@ export default function HeroSection({ heroImage }) {
               We build digital
             </motion.h1>
           </div>
-          <div className="overflow-hidden">
+          <div className="overflow-visible pb-2">
             <motion.h1
               initial={{ y: '120%' }}
               animate={{ y: 0 }}
               transition={{ delay: 0.45, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="text-alabaster font-display font-black italic text-[clamp(3rem,10vw,8rem)] leading-[0.9] tracking-[-0.03em]"
+              className="text-alabaster font-display font-black italic text-[clamp(3rem,10vw,8rem)] leading-[1] tracking-[-0.03em]"
               style={{
                 transform: `translate(${mouse.x * 0.5}px, ${mouse.y * 0.5}px)`,
               }}
