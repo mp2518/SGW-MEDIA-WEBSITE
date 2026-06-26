@@ -44,7 +44,7 @@ export default function HeroSection({ heroImage }) {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://cdn.coverr.co/videos/coverr-typing-on-a-computer-1584/1080p.mp4" type="video/mp4" />
+          <source src="https://media.base44.com/videos/public/6a1ecf53da4a1b04db9d706d/ceec82100_generated_video.mp4" type="video/mp4" />
         </video>
       </motion.div>
 
