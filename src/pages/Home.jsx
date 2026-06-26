@@ -9,6 +9,7 @@ import ContactSection from '../components/sections/ContactSection';
 import PricingSection from '../components/sections/PricingSection';
 import BookingSection from '../components/sections/BookingSection';
 import TestimonialsSection from '../components/sections/TestimonialsSection';
+import FooterSection from '../components/sections/FooterSection';
 
 const HERO_IMAGE = 'https://media.base44.com/images/public/6a1ecf53da4a1b04db9d706d/9086af8ed_generated_3416b862.png';
 const ABOUT_IMAGE = 'https://media.base44.com/images/public/6a1ecf53da4a1b04db9d706d/f607c264a_generated_748f5a92.png';
@@ -33,6 +34,7 @@ export default function Home() {
       <TestimonialsSection />
       <BookingSection />
       <ContactSection />
+      <FooterSection />
     </div>
   );
 }
