@@ -4,15 +4,6 @@ import { X, ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Askisi Sport Performance',
-    category: 'Web Design',
-    tag: 'websites',
-    description: 'A high-performance sports training website built to elevate athletes.',
-    stats: '',
-    size: 'large',
-    image: 'https://media.base44.com/images/public/6a1ecf53da4a1b04db9d706d/c02122151_Screenshot2025-08-11at63156PM.png',
-  },
-  {
     title: 'PerformaFlexMR',
     category: 'Web Design',
     tag: 'websites',
@@ -38,6 +29,15 @@ const projects = [
     stats: '',
     size: 'small',
     image: 'https://media.base44.com/images/public/6a1ecf53da4a1b04db9d706d/f111225d7_Screenshot2025-06-18at34453PM.png',
+  },
+  {
+    title: 'Askisi Sport Performance',
+    category: 'Web Design',
+    tag: 'websites',
+    description: 'A high-performance sports training website built to elevate athletes.',
+    stats: '',
+    size: 'small',
+    image: 'https://media.base44.com/images/public/6a1ecf53da4a1b04db9d706d/c02122151_Screenshot2025-08-11at63156PM.png',
   },
   {
     title: 'App — Coming Soon',
