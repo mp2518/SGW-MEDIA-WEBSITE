@@ -55,12 +55,12 @@ export default function ContactSection() {
           >
             Start a Project
           </motion.p>
-          <div className="overflow-hidden">
+          <div className="overflow-visible pb-2">
             <motion.h2
               initial={{ y: '100%' }}
               animate={isHeaderInView ? { y: 0 } : {}}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display font-black text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-alabaster"
+              className="font-display font-black text-[clamp(2.5rem,6vw,5rem)] leading-[1] text-alabaster"
             >
               Let's build your <br />
               <span className="italic">digital advantage.</span>

@@ -232,12 +232,12 @@ export default function WorkSection({ images }) {
               Selected Work
             </motion.p>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-10">
-              <div className="overflow-hidden">
+              <div className="overflow-visible pb-2">
                 <motion.h2
                   initial={{ y: '100%' }}
                   animate={isHeaderInView ? { y: 0 } : {}}
                   transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                  className="font-display font-black text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] text-foreground"
+                  className="font-display font-black text-[clamp(2.5rem,6vw,5rem)] leading-[1] text-foreground"
                 >
                   Built for business. <br className="hidden md:block" />
                   <span className="italic">Proven by results.</span>
