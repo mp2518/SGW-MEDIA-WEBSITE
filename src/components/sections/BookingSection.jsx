@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 // Replace this URL with your actual Calendly link
@@ -7,6 +7,14 @@ const CALENDLY_URL = 'https://calendly.com/sgwmpllc/meeting-invite';
 export default function BookingSection() {
   const headerRef = useRef(null);
   const isHeaderInView = useInView(headerRef, { once: true, margin: '-100px' });
+  const [iframeHeight, setIframeHeight] = useState(750);
+
+  useEffect(() => {
+    const update = () => setIframeHeight(window.innerWidth < 768 ? 1100 : 750);
+    update();
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
 
   return (
     <section id="book" className="relative py-32 md:py-48 px-6 md:px-16 bg-obsidian text-alabaster overflow-hidden">
@@ -59,8 +67,9 @@ export default function BookingSection() {
             <iframe
               src={`${CALENDLY_URL}?embed_domain=${window.location.hostname}&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&background_color=0f0f0f&text_color=f5f5f0&primary_color=1f0bdf`}
               width="100%"
-              height="750"
+              height={iframeHeight}
               frameBorder="0"
+              scrolling="no"
               title="Schedule a discovery call"
               style={{ minWidth: '320px', display: 'block' }}
             />
