@@ -24,7 +24,7 @@ export default function Navbar() {
       {/* mix-blend-difference layer — text only, logo is an invisible spacer */}
       <motion.nav
         {...navAnimation}
-        className="fixed top-0 left-0 right-0 z-50 mix-blend-difference"
+        className="absolute top-0 left-0 right-0 z-50 mix-blend-difference"
       >
         <div className="flex items-center justify-between px-6 md:px-12 py-6">
           <button onClick={() => scrollTo('#hero')} className="flex items-center gap-3">
@@ -64,7 +64,7 @@ export default function Navbar() {
       {/* Logo overlay — no blend mode, always shows original colors */}
       <motion.div
         {...navAnimation}
-        className="fixed top-0 left-0 z-[51] px-6 md:px-12 py-6 pointer-events-none"
+        className="absolute top-0 left-0 z-[51] px-6 md:px-12 py-6 pointer-events-none"
       >
         <button onClick={() => scrollTo('#hero')} className="pointer-events-auto">
           <img src="/logo.png" alt="SGW Media Production LLC" className="h-10 w-auto" />
