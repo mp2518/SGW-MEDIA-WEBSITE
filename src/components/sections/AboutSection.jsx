@@ -20,7 +20,7 @@ function AnimatedLine({ belief, index }) {
       transition={{ duration: 0.7, delay: index * 0.15, ease: [0.22, 1, 0.36, 1] }}
       className="border-b border-stone/40 pb-8 group"
     >
-      <p className="font-display font-bold text-2xl md:text-3xl text-foreground leading-snug group-hover:text-alabaster transition-colors duration-300">
+      <p className="font-display font-bold text-2xl md:text-3xl text-alabaster/70 group-hover:text-alabaster transition-colors duration-300 leading-snug">
         {belief.text}
       </p>
       <p className="font-body font-medium text-muted-foreground text-sm mt-2">
