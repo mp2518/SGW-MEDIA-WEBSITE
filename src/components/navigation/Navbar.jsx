@@ -30,7 +30,7 @@ export default function Navbar() {
           <button onClick={() => scrollTo('#hero')} className="flex items-center gap-3">
             {/* invisible spacer so layout matches the logo overlay */}
             <img src="/logo.png" alt="" aria-hidden="true" className="h-10 w-auto invisible" />
-            <span className="text-white font-heading font-black text-xl tracking-tight">SGW PRODUCTION</span>
+            <span className="text-white font-heading font-black text-xl tracking-tight">SGW MEDIA PRODUCTION LLC</span>
           </button>
 
           <div className="hidden md:flex items-center gap-10">
