@@ -17,19 +17,17 @@ export default function Navbar() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const navAnimation = { initial: { y: -100 }, animate: { y: 0 }, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } };
-
   return (
     <>
-      {/* mix-blend-difference layer — text only, logo is an invisible spacer */}
       <motion.nav
-        {...navAnimation}
-        className="absolute top-0 left-0 right-0 z-50 mix-blend-difference"
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="relative z-50 bg-obsidian"
       >
-        <div className="flex items-center justify-between px-6 md:px-12 py-6">
+        <div className="flex items-center justify-between px-6 md:px-12 py-4">
           <button onClick={() => scrollTo('#hero')} className="flex items-center gap-3">
-            {/* invisible spacer so layout matches the logo overlay */}
-            <img src="/logo.png" alt="" aria-hidden="true" className="h-10 w-auto invisible" />
+            <img src="/logo.png" alt="SGW Media Production LLC" className="h-10 w-auto" />
             <span className="text-white font-heading font-black text-xl tracking-tight">SGW MEDIA PRODUCTION LLC</span>
           </button>
 
@@ -60,16 +58,6 @@ export default function Navbar() {
           </button>
         </div>
       </motion.nav>
-
-      {/* Logo overlay — no blend mode, always shows original colors */}
-      <motion.div
-        {...navAnimation}
-        className="absolute top-0 left-0 z-[51] px-6 md:px-12 py-6 pointer-events-none"
-      >
-        <button onClick={() => scrollTo('#hero')} className="pointer-events-auto">
-          <img src="/logo.png" alt="SGW Media Production LLC" className="h-10 w-auto" />
-        </button>
-      </motion.div>
 
       {/* Full screen mobile menu */}
       <AnimatePresence>
