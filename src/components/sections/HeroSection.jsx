@@ -33,7 +33,7 @@ export default function HeroSection({ heroImage }) {
   };
 
   return (
-    <section id="hero" ref={sectionRef} className="relative h-screen overflow-hidden">
+    <section id="hero" ref={sectionRef} className="relative flex flex-col min-h-screen overflow-hidden">
       {/* Background video layer */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 -top-[10%] -bottom-[10%]">
         <div className="absolute inset-0 bg-obsidian/60 z-10" />
@@ -56,7 +56,7 @@ export default function HeroSection({ heroImage }) {
       {/* Content */}
       <motion.div
         style={{ y: textY, opacity }}
-        className="relative z-30 h-full flex flex-col justify-end pb-24 md:pb-32 px-6 md:px-16"
+        className="relative z-30 flex-1 flex flex-col justify-end pb-24 md:pb-32 px-6 md:px-16"
       >
         <div className="max-w-[90rem] mx-auto w-full">
           <motion.p
